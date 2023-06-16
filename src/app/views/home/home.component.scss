@@ -1,0 +1,47 @@
+.hero-banner {
+    background-image: url("https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/other/ul/cms/59/38/leadspace-SAPHANA.component.xl.ts=1679320408534.png/content/adobe-cms/es/es/topics/it-operations/_jcr_content/root/leadspace");
+    z-index: 1;
+    height: 400px;
+}
+
+.section {
+    height: 400px;
+    background-color: rgb(4, 11, 43);
+    //background-image: url("/assets/images/yo.png");
+    object-fit: contain;
+}
+
+.findnrock {
+    background-color: rgba(234, 202, 202, 0.6);
+    height: 400px;
+    background-image: url("/assets/images/findnrock.png");
+}
+
+.text-r {
+    color: rgb(214, 91, 147);
+    // separation between characters
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.secondary {
+    color: rgb(210, 210, 210);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+}
+
+z-1 {
+    z-index: 1;
+}
+
+.vertical-line {
+    border-left: 5px solid rgb(214, 91, 147);
+    height: 100%;
+}

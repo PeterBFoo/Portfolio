@@ -1,0 +1,12 @@
+.a-function {
+    color: yellow;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+}

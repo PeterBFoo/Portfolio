@@ -1,0 +1,36 @@
+<header class="mb-5">
+    <i id="arrow" #arrow class="arrow fas fa-arrow-right-long pb-3 pl-2 pr-3 text-white" (click)="showNavbar()"></i>
+    <nav id="sidebarMenu" #sidebarMenu class="collapse d-lg-block sidebar collapse bg-white">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4">
+                <i id="hideNavbarButton" class="fas fa-arrow-left-long mb-3" (click)="hideNavbar()"></i>
+                <a id="home" class="list-group-item list-group-item-action py-2 ripple" routerLink="/portfolio/home"
+                    aria-current="true">
+                    <i class="fas fa-home fa-fw me-3"></i><span>Home</span>
+                </a>
+                <!-- 
+                <a id="projects" class="list-group-item list-group-item-action py-2 ripple">
+                    <i class="fas fa-clipboard fa-fw me-3"></i><span>Projects</span>
+                </a>
+                <a id="about" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    <i class="fas fa-hand fa-fw me-3"></i><span>About me</span>
+                </a>
+            -->
+            </div>
+        </div>
+    </nav>
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu"
+                aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="navbar-nav ms-auto d-flex flex-row">
+                <li class="nav-item">
+                    <h5 class="z-1 mt-2 mx-5 text-white">Pere Antoni Borràs Expósito</h5>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
