@@ -4,7 +4,7 @@ import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '**', redirectTo: 'portfolio/home' }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
