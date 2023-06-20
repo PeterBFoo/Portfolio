@@ -1,4 +1,5 @@
 import { AfterContentInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,8 @@ import { AfterContentInit, Component, ElementRef, HostListener, ViewChild } from
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  constructor(private router: Router) { }
+
   ngAfterViewInit() {
     document.addEventListener('scroll', function () {
       var fadeInElements = document.querySelectorAll('.fade-in');
@@ -21,5 +24,7 @@ export class HomeComponent {
     });
   }
 
-
-}
+  redirectToJobPortal() {
+    window.location.href = "https://findnrock.tech"
+  }
+}  
