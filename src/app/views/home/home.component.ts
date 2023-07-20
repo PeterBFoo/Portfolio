@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { AfterContentInit, Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
   constructor(private router: Router) { }
 
   ngAfterViewInit() {
@@ -25,6 +26,10 @@ export class HomeComponent {
   }
 
   redirectToJobPortal() {
-    window.location.href = "https://findnrock.tech"
+    window.open("https://findnrock.tech", '_blank')
+  }
+
+  redirectToNativics() {
+    window.open("https://www.nativics.com/en", '_blank')
   }
 }  
