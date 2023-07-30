@@ -7,8 +7,14 @@
 .section {
     height: 400px;
     background-color: rgb(4, 11, 43);
-    //background-image: url("/assets/images/yo.png");
+
     object-fit: contain;
+}
+
+.experiences {
+    height: 500px;
+    background-color: rgba(4, 7, 20);
+    z-index: 1;
 }
 
 .findnrock {
@@ -58,9 +64,22 @@ z-1 {
 .vertical-line {
     border-left: 5px solid rgb(214, 91, 147);
     height: 100%;
+    z-index: 999;
 }
 
 .vertical-line-orange {
     border-left: 5px solid rgb(212, 150, 63);
     height: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .experiences {
+        height: 600px;
+    }
+}
+
+@media (max-width: 366px) {
+    .experiences {
+        height: 850px;
+    }
 }
